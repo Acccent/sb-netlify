@@ -5,7 +5,9 @@
 
 	<body>
 
-		{% include "components/bgimg.njk" %}
+		{% if bgimg %}
+			{% include "components/bgimg.njk" %}
+		{% endif %}
 
 		{# <header>
 			{% include "components/nav.njk" %}
