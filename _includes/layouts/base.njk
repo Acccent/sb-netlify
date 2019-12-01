@@ -6,7 +6,13 @@
 	<body>
 
 		{% if bgimg %}
-			{% include "components/bgimg.njk" %}
+			<div style="
+			    position: fixed;
+			    z-index: -1;
+			    height: 100vh;
+			    width: 100vw;
+			    background: center / cover url({{ bgimg }});">
+			</div>
 		{% endif %}
 
 		{# <header>
