@@ -45,11 +45,11 @@ module.exports = function(eleventyConfig) {
   });
 
   // only content in the `posts/` directory
-  eleventyConfig.addCollection("posts", function(collection) {
-    return collection.getAllSorted().filter(function(item) {
-      return item.inputPath.match(/^\.\/posts\//) !== null;
-    });
-  });
+  // eleventyConfig.addCollection("posts", function(collection) {
+  //   return collection.getAllSorted().filter(function(item) {
+  //     return item.inputPath.match(/^\.\/posts\//) !== null;
+  //   });
+  // });
 
   // Don't process folders with static assets e.g. images
   eleventyConfig.addPassthroughCopy("favicon.ico");
