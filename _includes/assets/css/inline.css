@@ -7,6 +7,10 @@
   box-sizing: border-box;
 }
 
+html {
+	font-size: 20px;
+}
+
 html,
 body {
 	padding: 0;
@@ -22,10 +26,6 @@ body {
 	background-color: black;
 }
 
-main {
-	max-width: 37.5em;
-}
-
 p,
 pre,
 code {
@@ -39,21 +39,6 @@ a[href]:visited {
 
 a[href]:not(:hover) {
 	text-decoration: none;
-}
-
-header,
-main,
-footer {
-	padding: 1em;
-}
-
-main {
-	padding-bottom: 2em;
-}
-
-main :first-child,
-main > article :first-child {
-	margin-top: 0;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -75,6 +60,10 @@ pre {
 	hyphens: none;
 	padding: 1em;
 	margin: .5em 0;
+}
+
+img {
+	max-width: 100%;
 }
 
 /* Header Logo (style as h2) */
@@ -182,10 +171,4 @@ button {
 	background-color: var(--blue);
 	color: var(--white);
 	cursor: pointer;
-}
-
-@media screen and (min-width:768px) {
-	:root {
-		font-size: 1.1rem;
-	}
 }

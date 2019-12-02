@@ -1,0 +1,15 @@
+.home-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	height: 100vh;
+	padding: 120px 80px;
+}
+
+.page-column {
+	max-width: 37.5rem;
+}
+
+.home-container > .page-column {
+	font-size: 1.5rem;
+}
