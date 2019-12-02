@@ -3,10 +3,12 @@ layout: layouts/base.njk
 section: page
 ---
 
-<div class="{{ home-container if title == 'Home' }}">
-    {% if title != 'Home' %}
-        <h1>{{ title }}</h1>
-    {% endif %}
+{% if title == 'Home' %}
+<div class="home-container">
+{% else %}
+<div class="page-container">
+    <h1>{{ title }}</h1>
+{% endif %}
 
     {{ layoutContent | safe }}
 </div>
